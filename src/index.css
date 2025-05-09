@@ -2,4 +2,9 @@
 
 @theme {
   --font-noto-sans: "Noto Sans", sans-serif;
+  --color-main-bg: #ecf3fd;
+  --color-white-bg: #fcfdff;
+  --color-main-border: #d9dfeb;
+  --color-switch-bg: #eeeef0;
+  --color-primary: #09153d;
 }

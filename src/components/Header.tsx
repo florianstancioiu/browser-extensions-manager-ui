@@ -18,7 +18,7 @@ const Header = () => {
       {darkMode && (
         <div
           onClick={toggleDarkMode}
-          className="w-[50px] h-[50px] bg-switch-bg grid place-items-center cursor-pointer rounded-[10px]"
+          className="w-[50px] h-[50px] bg-dark-mode-switch-bg grid place-items-center cursor-pointer rounded-[10px]"
         >
           <SvgSun />
         </div>
@@ -26,7 +26,7 @@ const Header = () => {
       {!darkMode && (
         <div
           onClick={toggleDarkMode}
-          className="w-[50px] h-[50px] bg-switch-bg grid place-items-center cursor-pointer rounded-[10px]"
+          className="w-[50px] h-[50px] bg-dark-mode-switch-bg grid place-items-center cursor-pointer rounded-[10px]"
         >
           <SvgMoon />
         </div>

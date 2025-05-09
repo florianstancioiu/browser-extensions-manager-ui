@@ -5,6 +5,9 @@
   --color-main-bg: #ecf3fd;
   --color-white-bg: #fcfdff;
   --color-main-border: #d9dfeb;
-  --color-switch-bg: #eeeef0;
+  --color-dark-mode-switch-bg: #eeeef0;
   --color-primary: #09153d;
+  --color-active-switch-bg: #ca211a;
+  --color-inactive-switch-bg: #c6c6c6;
+  --color-button-border: #c6c6c6;
 }

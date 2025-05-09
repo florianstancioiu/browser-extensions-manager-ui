@@ -1,13 +1,36 @@
 import Filter from "./Filter";
 
-const Title = ({ value }) => {
+const filters = [
+  {
+    title: "All",
+    key: "all",
+  },
+  {
+    title: "Active",
+    key: "active",
+  },
+  {
+    title: "Inactive",
+    key: "inactive",
+  },
+];
+
+const Title = ({ value, activeFilter, onClickFilter }) => {
   return (
-    <div className="flex justify-between items-center">
-      <h1>{value}</h1>
-      <div className="flex justify-between items-center">
-        <Filter title="All" type="all" />
-        <Filter title="Active" type="active" />
-        <Filter title="Inactive" type="inactive" />
+    <div className="mb-[40px]">
+      <h1 className="grid place-items-center font-bold text-[36px] mb-[26px]">
+        {value}
+      </h1>
+      <div className="flex justify-center gap-[12px] items-center">
+        {filters.map((filter) => (
+          <Filter
+            key={filter.key}
+            keyTitle={filter.key}
+            title={filter.title}
+            isActive={activeFilter === filter.key}
+            onClickFilter={onClickFilter}
+          />
+        ))}
       </div>
     </div>
   );

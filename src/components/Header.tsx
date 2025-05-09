@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white-bg text-primary flex justify-between items-center py-[7px] px-[10px] rounded-[10px] border-[1px] border-main-border">
+    <header className="bg-white-bg text-primary flex justify-between items-center py-[7px] px-[10px] rounded-[10px] border-[1px] border-main-border mb-[50px]">
       <a href="#">
         <img src={SvgLogo} alt="Browser Extensions Manager UI Logo" />
       </a>

@@ -5,6 +5,7 @@ import Extension from "./components/Extension.tsx";
 
 const App = () => {
   const [extensions, setExtensions] = useState<Extension[]>([]);
+  const [activeFilter, setActiveFilter] = useState<string>("all");
 
   useEffect(() => {
     const fetchExtensions = async () => {
@@ -32,11 +33,19 @@ const App = () => {
     );
   };
 
+  const onClickFilterHandler = (keyTitle: string) => {
+    setActiveFilter(keyTitle);
+  };
+
   return (
     <>
       <div className="pt-[20px] px-[16px]">
         <Header />
-        <Title value="Extensions List" />
+        <Title
+          value="Extensions List"
+          activeFilter={activeFilter}
+          onClickFilter={onClickFilterHandler}
+        />
         <main>
           {extensions.map((extension) => (
             <Extension

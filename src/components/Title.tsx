@@ -18,7 +18,7 @@ const filters = [
 const Title = ({ value, activeFilter, onClickFilter }) => {
   return (
     <div className="mb-[40px]">
-      <h1 className="grid place-items-center font-bold text-[36px] mb-[26px]">
+      <h1 className="dark:text-dark-primary text-primary grid place-items-center font-bold text-[36px] mb-[26px]">
         {value}
       </h1>
       <div className="flex justify-center gap-[12px] items-center">

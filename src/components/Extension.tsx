@@ -19,7 +19,7 @@ const Extension = ({
   onRemove,
 }: Extension) => {
   return (
-    <div className="bg-white-bg mb-[15px] border-main-border border-[1px] rounded-[10px] p-[18px]">
+    <div className="dark:bg-dark-bg dark:border-main-border-dark bg-white-bg mb-[15px] border-main-border border-[1px] rounded-[10px] p-[18px]">
       <div className="flex gap-[16px] mb-[28px]">
         <img
           className="w-[60px] h-[60px]"

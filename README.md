@@ -2,6 +2,8 @@
 
 This is a solution to the [Browser extensions manager UI challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+**Note: This README file is currently incomplete.**
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -96,8 +98,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [Vite Plugin SVGR](https://www.npmjs.com/package/vite-plugin-svgr) - This helped me to include SVGs as React components in JSX
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [How do I add color to my svg image in react](https://stackoverflow.com/a/62532186/12159189) - StackOverflow answer I found useful
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

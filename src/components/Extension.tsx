@@ -19,11 +19,13 @@ const Extension = ({
   return (
     <div className="bg-white-bg mb-[15px] border-main-border border-[1px] rounded-[10px] p-[18px]">
       <div className="flex gap-[16px] mb-[28px]">
+        <img
+          className="w-[60px] h-[60px]"
+          src={logo}
+          alt={`${name} Extension Logo`}
+        />
         <div>
-          <img src={logo} alt={`${name} Extension Logo`} />
-        </div>
-        <div>
-          <p className="font-bold">{name}</p>
+          <p className="font-bold mb-[15px]">{name}</p>
           <p className="font-light">{description}</p>
         </div>
       </div>

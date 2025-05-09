@@ -33,6 +33,18 @@ const App = () => {
     );
   };
 
+  const onRemoveHandler = (name: string) => {
+    setExtensions(
+      extensions.filter((extension: typeof Extension) => {
+        if (extension.name === name) {
+          return false;
+        }
+
+        return true;
+      })
+    );
+  };
+
   const onClickFilterHandler = (keyTitle: string) => {
     setActiveFilter(keyTitle);
   };
@@ -47,16 +59,29 @@ const App = () => {
           onClickFilter={onClickFilterHandler}
         />
         <main>
-          {extensions.map((extension) => (
-            <Extension
-              key={extension.name}
-              name={extension.name}
-              logo={extension.logo}
-              description={extension.description}
-              isActive={extension.isActive}
-              onSwitchClick={onSwitchClickHandler}
-            />
-          ))}
+          {extensions
+            .filter((extension) => {
+              if (activeFilter === "active") {
+                return extension.isActive;
+              }
+
+              if (activeFilter === "inactive") {
+                return !extension.isActive;
+              }
+
+              return true;
+            })
+            .map((extension) => (
+              <Extension
+                key={extension.name}
+                name={extension.name}
+                logo={extension.logo}
+                description={extension.description}
+                isActive={extension.isActive}
+                onSwitchClick={onSwitchClickHandler}
+                onRemove={onRemoveHandler}
+              />
+            ))}
         </main>
       </div>
     </>

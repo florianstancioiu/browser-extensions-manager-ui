@@ -7,6 +7,7 @@ export interface Extension {
   isActive: boolean;
   description: string;
   onSwitchClick?: (name?: string | undefined) => void;
+  onRemove: (name: string) => void;
 }
 
 const Extension = ({
@@ -15,6 +16,7 @@ const Extension = ({
   description,
   isActive,
   onSwitchClick,
+  onRemove,
 }: Extension) => {
   return (
     <div className="bg-white-bg mb-[15px] border-main-border border-[1px] rounded-[10px] p-[18px]">
@@ -30,7 +32,7 @@ const Extension = ({
         </div>
       </div>
       <div className="flex justify-between items-center">
-        <Button title="Remove" />
+        <Button title="Remove" keyTitle={name} onClickButton={onRemove} />
         <Switch isActive={isActive} name={name} onSwitchClick={onSwitchClick} />
       </div>
     </div>

@@ -8,6 +8,7 @@
   --font-noto-sans: "Noto Sans", sans-serif;
   --color-main-bg: #ecf3fd;
   --color-white-bg: #fcfdff;
+  --color-hover-white-bg: #f6fafd;
   --color-dark-bg: #1f2535;
   --color-hover-dark-bg: #525868;
   --color-hover-dark-bg-btn: #f35b56;
@@ -15,9 +16,11 @@
   --color-main-border-dark: #51566a;
   --color-main-border-dark-header: #040918;
   --color-dark-mode-switch-bg: #eeeef0;
+  --color-hover-dark-mode-switch-bg: #c6c6c6;
   --color-dark-mode-switch-bg-dark: #2f354b;
   --color-primary: #09153d;
   --color-dark-primary: #f8fcfd;
+  --color-hover-primary: #585f69;
   --color-active-switch-bg: #ca211a;
   --color-inactive-switch-bg: #c6c6c6;
   --color-button-border: #c6c6c6;

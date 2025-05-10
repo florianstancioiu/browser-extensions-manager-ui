@@ -6,7 +6,7 @@ import SvgMoon from "../images/icon-moon.svg?react";
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
-    setDarkMode((val) => !val);
+    setDarkMode((value) => !value);
   };
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Header = () => {
       </a>
       <div
         onClick={toggleDarkMode}
-        className="dark:hover:bg-hover-dark-bg dark:bg-dark-mode-switch-bg-dark w-[50px] h-[50px] bg-dark-mode-switch-bg grid place-items-center cursor-pointer rounded-[10px]"
+        className="hover:bg-hover-dark-mode-switch-bg dark:hover:bg-hover-dark-bg dark:bg-dark-mode-switch-bg-dark w-[50px] h-[50px] bg-dark-mode-switch-bg grid place-items-center cursor-pointer rounded-[10px]"
       >
         {darkMode && <SvgSun />}
         {!darkMode && <SvgMoon />}

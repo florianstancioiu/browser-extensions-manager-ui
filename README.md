@@ -99,7 +99,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Vite Plugin SVGR](https://www.npmjs.com/package/vite-plugin-svgr) - This helped me to include SVGs as React components in JSX
 - [How do I add color to my svg image in react](https://stackoverflow.com/a/62532186/12159189) - StackOverflow answer I found useful
-- [Why does my Vue/Vite/Typescript application require me to separate "import" and "import type" by default?](https://stackoverflow.com/a/76984656/12159189) - A stackoverflow answer I found useful when dealing with typescript
+- [Why does my Vue/Vite/Typescript application require me to separate "import" and "import type" by default?](https://stackoverflow.com/a/76984656/12159189) - A StackOverflow answer I found useful when dealing with TypeScript
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

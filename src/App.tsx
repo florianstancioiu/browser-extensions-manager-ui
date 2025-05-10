@@ -54,14 +54,14 @@ const App = () => {
 
   return (
     <>
-      <div className="pt-[20px] px-[16px]">
+      <div className="min-h-dvh pt-[20px] px-[16px] fm:w-[var(--desktop-container)] fm:mx-auto fm:pt-[40px] fm:pb-[60px]">
         <Header />
         <Title
           value="Extensions List"
           activeFilter={activeFilter}
           onClickFilter={onClickFilterHandler}
         />
-        <main>
+        <main className="fm:grid fm:grid-cols-3 fm:gap-[14px]">
           {extensions
             .filter((extension) => {
               if (activeFilter === "active") {

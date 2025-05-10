@@ -25,7 +25,7 @@ const Header = () => {
   }, [darkMode]);
 
   return (
-    <header className="bg-white-bg dark:bg-dark-bg dark:text-dark-primary dark:border-main-border-dark-header text-primary flex justify-between items-center py-[7px] px-[10px] rounded-[10px] border-[1px] border-main-border mb-[50px]">
+    <header className="fm:mb-[60px] bg-white-bg dark:bg-dark-bg dark:text-dark-primary dark:border-main-border-dark-header text-primary flex justify-between items-center py-[7px] px-[10px] rounded-[10px] border-[1px] border-main-border mb-[50px]">
       <a href="#">
         {darkMode && <SvgLogo fill="#fff" />}
         {!darkMode && <SvgLogo fill="#091540" />}

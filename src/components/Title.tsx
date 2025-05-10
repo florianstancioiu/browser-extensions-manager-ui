@@ -23,8 +23,8 @@ export type Title = {
 
 const Title = ({ value, activeFilter, onClickFilter }: Title) => {
   return (
-    <div className="mb-[40px]">
-      <h1 className="dark:text-dark-primary text-primary grid place-items-center font-bold text-[36px] mb-[26px]">
+    <div className="fm:mb-[30px] mb-[40px] fm:flex fm:justify-between fm:items-center">
+      <h1 className="fm:mb-0 dark:text-dark-primary text-primary grid place-items-center font-bold text-[36px] mb-[26px]">
         {value}
       </h1>
       <div className="flex justify-center gap-[12px] items-center">

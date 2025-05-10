@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+  --desktop-container: 1168px;
+}
+
 @theme {
   --font-noto-sans: "Noto Sans", sans-serif;
   --color-main-bg: #ecf3fd;
@@ -21,6 +25,7 @@
   --color-main-bg-bottom: #eef8f9;
   --color-main-bg-top-dark: #040918;
   --color-main-bg-bottom-dark: #091540;
+  --breakpoint-fm: 1168px;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

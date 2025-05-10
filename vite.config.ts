@@ -5,5 +5,6 @@ import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/browser-extensions-manager-ui/",
   plugins: [react(), tailwindcss(), svgr()],
 });

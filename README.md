@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/browser-extension-manager-ui-with-react-and-typescript-hdC5m27Sn6](https://www.frontendmentor.io/solutions/browser-extension-manager-ui-with-react-and-typescript-hdC5m27Sn6)
 - Live Site URL: [https://florianstancioiu.github.io/browser-extensions-manager-ui/](https://florianstancioiu.github.io/browser-extensions-manager-ui/)
 
 ## My process

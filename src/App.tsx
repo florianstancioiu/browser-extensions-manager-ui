@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
-import Extension from "./components/Extension.tsx";
+import {
+  default as ExtensionComponent,
+  type Extension,
+} from "./components/Extension.tsx";
 
 const App = () => {
   const [extensions, setExtensions] = useState<Extension[]>([]);
@@ -23,7 +26,7 @@ const App = () => {
 
   const onSwitchClickHandler = (name: string) => {
     setExtensions(
-      extensions.map((extension: typeof Extension) => {
+      extensions.map((extension: Extension) => {
         if (extension.name === name) {
           return { ...extension, isActive: !extension.isActive };
         }
@@ -35,7 +38,7 @@ const App = () => {
 
   const onRemoveHandler = (name: string) => {
     setExtensions(
-      extensions.filter((extension: typeof Extension) => {
+      extensions.filter((extension: Extension) => {
         if (extension.name === name) {
           return false;
         }
@@ -72,7 +75,7 @@ const App = () => {
               return true;
             })
             .map((extension) => (
-              <Extension
+              <ExtensionComponent
                 key={extension.name}
                 name={extension.name}
                 logo={extension.logo}

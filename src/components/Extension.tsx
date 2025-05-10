@@ -1,14 +1,14 @@
 import Button from "./Button";
 import Switch from "./Switch";
 
-export interface Extension {
+export type Extension = {
   name: string;
   logo: string;
   isActive: boolean;
   description: string;
-  onSwitchClick?: (name?: string | undefined) => void;
+  onSwitchClick: (name: string) => void;
   onRemove: (name: string) => void;
-}
+};
 
 const Extension = ({
   name,

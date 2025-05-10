@@ -1,8 +1,8 @@
-export interface Switch {
+export type Switch = {
   isActive: boolean;
   name: string;
-  onSwitchClick?: (name?: string | undefined) => void;
-}
+  onSwitchClick: (name: string) => void;
+};
 
 const Switch = ({ name, isActive, onSwitchClick }: Switch) => {
   return (

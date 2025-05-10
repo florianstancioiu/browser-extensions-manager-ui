@@ -1,6 +1,8 @@
-export interface Button {
+export type Button = {
   title: string;
-}
+  keyTitle: string;
+  onClickButton: (keyTitle: string) => void;
+};
 
 const Button = ({ title, keyTitle, onClickButton }: Button) => {
   return (

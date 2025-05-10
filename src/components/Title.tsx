@@ -15,7 +15,13 @@ const filters = [
   },
 ];
 
-const Title = ({ value, activeFilter, onClickFilter }) => {
+export type Title = {
+  value: string;
+  activeFilter: string;
+  onClickFilter: (keyTitle: string) => void;
+};
+
+const Title = ({ value, activeFilter, onClickFilter }: Title) => {
   return (
     <div className="mb-[40px]">
       <h1 className="dark:text-dark-primary text-primary grid place-items-center font-bold text-[36px] mb-[26px]">

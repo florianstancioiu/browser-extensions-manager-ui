@@ -30,22 +30,13 @@ const Header = () => {
         {darkMode && <SvgLogo fill="#fff" />}
         {!darkMode && <SvgLogo fill="#091540" />}
       </a>
-      {darkMode && (
-        <div
-          onClick={toggleDarkMode}
-          className="dark:bg-dark-mode-switch-bg-dark w-[50px] h-[50px] bg-dark-mode-switch-bg grid place-items-center cursor-pointer rounded-[10px]"
-        >
-          <SvgSun />
-        </div>
-      )}
-      {!darkMode && (
-        <div
-          onClick={toggleDarkMode}
-          className="dark:bg-dark-mode-switch-bg-dark w-[50px] h-[50px] bg-dark-mode-switch-bg grid place-items-center cursor-pointer rounded-[10px]"
-        >
-          <SvgMoon />
-        </div>
-      )}
+      <div
+        onClick={toggleDarkMode}
+        className="dark:hover:bg-hover-dark-bg dark:bg-dark-mode-switch-bg-dark w-[50px] h-[50px] bg-dark-mode-switch-bg grid place-items-center cursor-pointer rounded-[10px]"
+      >
+        {darkMode && <SvgSun />}
+        {!darkMode && <SvgMoon />}
+      </div>
     </header>
   );
 };
